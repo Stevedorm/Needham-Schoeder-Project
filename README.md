@@ -1,10 +1,10 @@
 # Needham-Schoeder-Project
 🧑‍💻 Authors
 
-Steven Dormady & Shea Parcell
-James Madison University
-CS 457 - Information Security
-Fall 2025
+Steven Dormady & <a href="https://github.com/Shea-Parcell">Shea Parcell</a><br>
+James Madison University<br>
+CS 457 - Information Security<br>
+Fall 2025<br>
 
 🛡️ Enhanced Needham–Schroeder Symmetric Key Protocol
 
