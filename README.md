@@ -9,29 +9,32 @@ Fall 2025
 🧱 Repository Structure
 .
 ├── amal/
-│   ├── amal.c                 # Client A
-│   ├── logAmal.txt
-|   ├── amalKey.bin
+│   ├── amal.c            # Client A (Amal)
+│   ├── logAmal.txt       # Amal runtime log
+│   └── amalKey.bin       # Amal's long-term symmetric key
 │
 ├── basim/
-│   ├── basim.c                # Client B
-│   ├── logBasim.txt
-|   ├── basimKey.bin
+│   ├── basim.c           # Client B (Basim)
+│   ├── logBasim.txt      # Basim runtime log
+│   └── basimKey.bin      # Basim's long-term symmetric key
 │
 ├── kdc/
-│   ├── kdc.c                  # KDC
-|   ├── sessionKey.bin
-│   ├── basimKey.bin
-|   ├── amalKey.bin
-│   └── logKDC.txt
+│   ├── kdc.c             # Key Distribution Center (KDC)
+│   ├── logKDC.txt        # KDC runtime log
+│   └── sessionKey.bin    # Latest issued session key
 │
-├── Makefile                  # Makefile for the project
-├── dispatcher.c              # Handles the execution of the clients
-├── myCrypto.c                # Contains all of
+├── dispatcher.c          # Orchestrates running Amal, Basim, and the KDC
+│
+├── myCrypto.c            # AES, nonce operations, and cryptographic utilities
 ├── myCrypto.h
-├── wrappers.c                # Utility for Forking and Piping
+│
+├── wrappers.c            # Utility wrapper functions for IPC, forking, pipes
 ├── wrappers.h
+│
+├── Makefile              # Build script for full project
+│
 └── README.md
+
 
 🛡️ Enhanced Needham–Schroeder Symmetric Key Protocol
 
