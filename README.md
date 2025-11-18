@@ -7,33 +7,31 @@ CS 457 - Information Security
 Fall 2025
 
 🧱 Repository Structure
+```text
 .
 ├── amal/
-│   ├── amal.c            # Client A (Amal)
-│   ├── logAmal.txt       # Amal runtime log
-│   └── amalKey.bin       # Amal's long-term symmetric key
+│   ├── amal.c
+│   ├── logAmal.txt
+│   └── amalKey.bin
 │
 ├── basim/
-│   ├── basim.c           # Client B (Basim)
-│   ├── logBasim.txt      # Basim runtime log
-│   └── basimKey.bin      # Basim's long-term symmetric key
+│   ├── basim.c
+│   ├── logBasim.txt
+│   └── basimKey.bin
 │
 ├── kdc/
-│   ├── kdc.c             # Key Distribution Center (KDC)
-│   ├── logKDC.txt        # KDC runtime log
-│   └── sessionKey.bin    # Latest issued session key
+│   ├── kdc.c
+│   ├── logKDC.txt
+│   └── sessionKey.bin
 │
-├── dispatcher.c          # Orchestrates running Amal, Basim, and the KDC
-│
-├── myCrypto.c            # AES, nonce operations, and cryptographic utilities
+├── dispatcher.c
+├── myCrypto.c
 ├── myCrypto.h
-│
-├── wrappers.c            # Utility wrapper functions for IPC, forking, pipes
+├── wrappers.c
 ├── wrappers.h
-│
-├── Makefile              # Build script for full project
-│
+├── Makefile
 └── README.md
+```
 
 
 🛡️ Enhanced Needham–Schroeder Symmetric Key Protocol
