@@ -10,26 +10,30 @@ Fall 2025
 ```text
 .
 ├── amal/
-│   ├── amal.c
-│   ├── logAmal.txt
-│   └── amalKey.bin
+│   ├── amal.c            # Client A (Amal)
+│   ├── logAmal.txt       # Amal runtime log
+│   └── amalKey.bin       # Amal's long-term symmetric key
 │
 ├── basim/
-│   ├── basim.c
-│   ├── logBasim.txt
-│   └── basimKey.bin
+│   ├── basim.c           # Client B (Basim)
+│   ├── logBasim.txt      # Basim runtime log
+│   └── basimKey.bin      # Basim's long-term symmetric key
 │
 ├── kdc/
-│   ├── kdc.c
-│   ├── logKDC.txt
-│   └── sessionKey.bin
+│   ├── kdc.c             # Key Distribution Center (KDC)
+│   ├── logKDC.txt        # KDC runtime log
+│   └── sessionKey.bin    # Latest issued session key
 │
-├── dispatcher.c
-├── myCrypto.c
+├── dispatcher.c          # Orchestrates running Amal, Basim, and the KDC
+│
+├── myCrypto.c            # AES, nonce ops, crypto utilities
 ├── myCrypto.h
-├── wrappers.c
+│
+├── wrappers.c            # Utility wrappers for forking, pipes, I/O
 ├── wrappers.h
-├── Makefile
+│
+├── Makefile              # Build script
+│
 └── README.md
 ```
 
