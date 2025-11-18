@@ -49,14 +49,14 @@ The enhanced version addresses weaknesses in the original protocol (notably repl
 🔐 Protocol Summary
 Original Needham–Schroeder (Symmetric Key)
 <ol>
-  A → KDC : IDa, IDb, Na
+  <li>A → KDC : IDa, IDb, Na</li>
   
-  KDC → A : E - Ka {Ks, len(IDb), IDb, Na, len(tkt), E - Kb {Ks, len(IDa), IDa}}
+  <li>KDC → A : E - Ka {Ks, len(IDb), IDb, Na, len(tkt), E - Kb {Ks, len(IDa), IDa}}</li>
   
-  A → B : E - Kb{Ks, IDa} || Na2
+  <li>A → B : E - Kb{Ks, IDa} || Na2</li>
   
-  B → A : E - Ks{f(Na2), Nb}
+  <li>B → A : E - Ks{f(Na2), Nb}</li>
   
-  A → B : E - Ks{f(Nb)}
+  <li>A → B : E - Ks{f(Nb)}</li>
 </ol>
 
