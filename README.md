@@ -6,6 +6,15 @@ James Madison University
 CS 457 - Information Security
 Fall 2025
 
+🛡️ Enhanced Needham–Schroeder Symmetric Key Protocol
+
+Secure Mutual Authentication & Session Key Establishment
+
+This repository implements an enhanced version of the Needham–Schroeder Symmetric Key Protocol, designed to provide secure authentication between two parties (traditionally Alice and Bob) using a trusted Key Distribution Center (KDC).
+
+The enhanced version addresses weaknesses in the original protocol (notably replay attacks) through the use of nonces.
+
+
 🧱 Repository Structure
 ```text
 .
@@ -37,14 +46,6 @@ Fall 2025
 └── README.md
 ```
 
-
-🛡️ Enhanced Needham–Schroeder Symmetric Key Protocol
-
-Secure Mutual Authentication & Session Key Establishment
-
-This repository implements an enhanced version of the Needham–Schroeder Symmetric Key Protocol, designed to provide secure authentication between two parties (traditionally Alice and Bob) using a trusted Key Distribution Center (KDC).
-
-The enhanced version addresses weaknesses in the original protocol (notably replay attacks) through the use of nonces.
 
 🔐 Protocol Summary
 Original Needham–Schroeder (Symmetric Key)
